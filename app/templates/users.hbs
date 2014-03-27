@@ -1,7 +1,7 @@
 <div>Users: {{usersCount}}</div>
 <ul class="users-listing">
     {{#each user in controller}}
-        <li>{{user.id}}
+        <li>
             {{#link-to "user" user}}
                 {{user.name}}
             {{/link-to}}

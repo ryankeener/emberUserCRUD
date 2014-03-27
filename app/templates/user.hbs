@@ -3,7 +3,7 @@
     <h2>{{name}}</h2>
     <span>{{email}}</span>
     <p>{{bio}}</p>
-    <span>Created {{creationDate}}</span><br>
+    <span>Created {{dateFromNow creationDate}}</span><br>
     <button {{action "edit"}}>Edit</button><button {{action "delete"}}>Delete</button>
     {{#if deleteMode}}
         <div class="confirm-box">
